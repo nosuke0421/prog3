@@ -1,0 +1,308 @@
+html,body{
+  width:100%;
+  padding:0 0;
+  margin:0 0;
+}
+
+body{
+  font-family: serif;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+.clear{
+  clear:left;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*ヘッダー*/
+header{
+  width:100%;
+  background-color: #4072B3;
+  color:#EEF9FF;
+  margin:0 0;
+}
+
+.header-left{
+  height:60px;
+  float: left;
+  color:#EEF9FF;
+  margin-left:20px;
+  padding:0 5px;
+  cursor: default;
+}
+
+.header-left img{
+  width:60px;
+  height:60px;
+  float:left;
+}
+
+.header-left p{
+  line-height: 60px;
+  font-size: 24px;
+  float: left;
+  margin:0 20px;
+  text-align: center;
+}
+
+.header-right{
+  float:right;
+}
+
+.header-right ul{
+  list-style: none;
+  height:60px;
+  margin: 0 0;
+}
+
+
+.header-right li{
+  float:left;
+  line-height: 60px;
+}
+
+.header-right li a{
+  color:#EEF9FF;
+  display: inline-block;
+  height:100%;
+  padding:0 20px;
+}
+
+.header-right li a:hover{
+  background-color: rgba(255,255,255,0.2);
+  transition: all 1s;
+}
+
+.menu{
+  display: none;
+}
+/*ヘッダーここまで*/
+
+.container{
+  width:100%;
+  max-width: 2000px;
+}
+
+/*トップ*/
+.top-wrapper{
+  height:600px;
+  width:100%;
+  height:600px;
+  background-color: #6088C6;
+  background-image: url(top.jpg);
+  background-size: cover;
+  padding:200px 0;
+}
+
+.message{
+  text-align: center;
+  width:100%;
+  padding:auto 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-bottom:50px;
+}
+
+.message h1{
+  margin:0 auto;
+  padding:200px auto;
+  color:white;
+  opacity: 0.9;
+  font-size:36px;
+}
+
+.message p{
+  color:white;
+  opacity: 0.9;
+  font-size: 18px;
+}
+
+.btn{
+  display: inline-block;
+  border-radius: 10px;
+  width:200px;
+  background-color:#4072B3;
+  box-shadow:0 7px #1B435D;
+  text-align: center;
+}
+
+.btn a{
+  font-size: 18px;
+  color:white;
+}
+
+.btn p{
+  opacity: 1;
+  font-size: 12px;
+}
+
+.btn:active{
+  box-shadow:none;
+  position:relative;
+  top:7px;
+}
+/*トップここまで*/
+
+/*サービス紹介*/
+.services{
+  margin: 0 auto;
+  max-width:1200px;
+}
+
+.main{
+  background-color: #EEF9FF
+}
+
+.topic{
+  text-align: center;
+  padding:20px 0;
+  margin:0 20%;
+  font-size: 32px;
+  border-bottom:solid #EB8686;
+}
+
+.service{
+  text-align: center;
+  width:33.3%;
+  padding:20px 5%;
+  float:left;
+}
+
+.service img{
+  width:100%;
+  padding:10% 10%;
+}
+
+.service p{
+  text-align: left;
+  font-size: 16px;
+}
+
+/*サービス紹介ここまで*/
+
+/*無料体験*/
+.ad{
+  background-color: #EEF9FF;
+  text-align: center;
+  padding-bottom:50px;
+}
+
+.ad h2{
+  margin-top:50px;
+}
+
+.ad p{
+  font-size: 20px;
+}
+
+/*無料体験ここまで*/
+
+/*フッター*/
+footer{
+  width:100%;
+  background-color:#4072B3;
+  color:#EEF9FF;
+}
+
+.footer-left{
+  float:left;
+  padding:0 5px;
+}
+
+.footer-left img{
+  width:60px;
+  height:60px;
+  float:left;
+
+}
+
+.footer-left p{
+  width:200px;
+  line-height: 60px;
+  font-size: 24px;
+  float: left;
+  margin:0 0;
+  text-align: center;
+}
+
+.footer-right{
+  float:right;
+}
+
+.footer-right p{
+  line-height:60px;
+  font-size:18px;
+  margin: 0 0;
+  padding:0 20px;
+}
+/*フッターここまで*/
+
+/*タブレット版*/
+@media all and (max-width:1000px){
+  .service{
+    width:50%;
+  }
+
+  .pro{
+    clear:left;
+    margin:0 auto;
+  }
+}
+
+
+/*スマホ版*/
+@media all and (max-width:670px){
+  .header-left{
+    margin-left:5px;
+  }
+
+  .header-left img{
+    width:40px;
+    height:40px;
+    margin:10px 0;
+  }
+
+  .header-left p{
+    font-size:18px;
+  }
+
+  .header-right{
+    display: none;
+  }
+
+  .menu{
+    display: block;
+    height:60px;
+    float:right;
+  }
+
+  .menu img{
+    height:100%;
+    padding:10px 10px;
+  }
+
+  .message h1,.topic{
+    font-size: 24px;
+  }
+
+  .message p{
+    font-size: 14px;
+  }
+
+  .ad h2{
+    font-size: 18px;
+  }
+
+  .ad p{
+    font-size: 16px;
+  }
+
+  .service{
+    width:100%;
+  }
+}
