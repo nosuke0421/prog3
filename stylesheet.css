@@ -305,4 +305,8 @@ footer{
   .service{
     width:100%;
   }
+  
+  .footer-right{
+    display: none;
+  }
 }
